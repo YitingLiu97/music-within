@@ -48,37 +48,49 @@ function setup() {
 	check = createCheckbox('clear', false);
 	check.changed(myCheckedEvent);
 
-	let zoffDiv = createDiv('zoff');
+	let zoffDiv = createDiv('');
+	let zoffP = createP('zOff');
 	zoffDiv.style('inline');
 	zoffValS = createSlider(0.01, 0.2, 0.01, 0.01);
+	zoffDiv.child(zoffP);
 	zoffDiv.child(zoffValS);
 
-	let noiseDiv = createDiv('noiseMax');
+	let noiseDiv = createDiv('');
+	let noiseP = createP("noiseMax");
 	noiseDiv.style('inline');
 	noiseMaxS = createSlider(0.01, 0.5, 0.3, 0.01);
+	noiseDiv.child(noiseP);
 	noiseDiv.child(noiseMaxS);
 
 	//increment of the perlin noise
-	let angleDiv = createDiv('angle');
+	let angleDiv = createDiv('');
+	let angleP=createP("angle");
 	angleDiv.style('inline');
 	aValS = createSlider(0.01, 0.3, 0.01, 0.01);
+	angleDiv.child(angleP);
 	angleDiv.child(aValS);
 
 	//polysynth delay
-	let delayDiv = createDiv('delay');
+	let delayDiv = createDiv('');
+	let delayP = createP("delay");
 	delayDiv.style('inline');
 	delayS = createSlider(3000, 8000, 4000, 200);
+	delayDiv.child(delayP);
 	delayDiv.child(delayS);
 
 	//size of the circle
-	let rangeDiv = createDiv('size');
+	let rangeDiv = createDiv('');
+	let rangeP = createP("size");
 	rangeDiv.style('inline');
 	rangeS = createSlider(width / 6, width, width / 2, width / 10);
+	rangeDiv.child(rangeP);
 	rangeDiv.child(rangeS);
 
-	let velDiv = createDiv('velocity');
+	let velDiv = createDiv('');
+	let velP = createP("velocity");
 	velDiv.style('inline');
 	velS = createSlider(0, 1, 0.2, 0.01);
+	velDiv.child(velP);
 	velDiv.child(velS);
 
 	monoSynth = new p5.MonoSynth();

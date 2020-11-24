@@ -16,9 +16,15 @@ canvas {
 div{
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  text-align: left;
 }
 
+p{
+  font-weight: ;
+}
 
 input[type=range] {
   width: 100%;
@@ -113,4 +119,39 @@ how to remove the virtical space around the range input in IE*/
     margin: 0;
     /*Edge starts the margin from the thumb, not the track as other browsers do*/
   }
+}
+
+
+/* social media  */
+
+footer{
+  position: fixed;
+  height: 10vh;
+  width: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.fa {
+  padding: 20px;
+    /* width: 30px; */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #ffc8c8;
+  color: #aa0000;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background-color: #aa0000;
+    color: #ffc8c8;
+}
+
+
+.fa:active {
+
+  background-color: #aa0000;
+  color: #ffc8c8;
 }
