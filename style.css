@@ -10,7 +10,7 @@ html, body {
 
 }
 canvas {
-  display: block;
+  display: inline-block;
 }
 
 div{
@@ -125,7 +125,8 @@ how to remove the virtical space around the range input in IE*/
 /* social media  */
 
 footer{
-  position: fixed;
+  position: fixed; 
+  /* eed to fix  */
   height: 10vh;
   width: auto;
   bottom: 0;
